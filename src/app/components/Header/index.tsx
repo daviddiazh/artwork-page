@@ -4,6 +4,8 @@ import Link from 'next/link'
 import React from 'react'
 import styles from './styles.module.css'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
+import menu from '../../../assets/menu.svg'
 
 export const Header = () => {
 
@@ -26,6 +28,13 @@ export const Header = () => {
                 <p>Contact</p>
             </Link>
         </div>
+
+        <Image
+            src={menu}
+            alt='Menu icon'
+            width={20}
+            className={styles.menu}
+        />
     </div>
   )
 }

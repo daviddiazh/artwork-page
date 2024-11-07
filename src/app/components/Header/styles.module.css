@@ -13,6 +13,10 @@
     gap: 15px;
 }
 
+.menu {
+    display: none;
+}
+
 .active {
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -22,5 +26,13 @@
 @media (max-width: 700px) {
     .container {
         padding: 30px 20px;
+    }
+
+    .linksContainer {
+        display: none;
+    }
+
+    .menu {
+        display: block;
     }
 }

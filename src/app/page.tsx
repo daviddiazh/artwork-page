@@ -64,16 +64,18 @@ export default function Home() {
           {
             data?.map((item) => (
               <div key={item?._id} className={styles.imageContainer}>
-                <Image
-                  src={item?.image}
-                  alt={item?.name}
-                  width={200}
-                  height={200}
-                  className={styles.image}
-                />
-                {
-                  item?.state === 'Sold' && <p className={styles.soldText}>Vendido</p>
-                }
+                <div className={styles.image}>
+                  <Image
+                    src={item?.image}
+                    alt={item?.name}
+                    width={200}
+                    height={200}
+                    style={{ width: '100%', height: '100%' }}
+                  />
+                  {
+                    item?.state === 'Sold' && <p className={styles.soldText}>Vendido</p>
+                  }
+                </div>
               </div>
             ))
           }

@@ -33,7 +33,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 27rem), 1fr));
-    grid-gap: 40px;
+    grid-gap: 60px;
     padding-top: 5px;
     padding-bottom: 15px;
     background-color: #fafafa;
@@ -49,14 +49,14 @@
 }
 
 .image {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
 }
 
 .soldText {
     position: absolute;
-    top: 5px;
-    right: 0px;
+    top: -13px;
+    right: -20px;
     color: #fff;
     background-color: #6445FF;
     width: 100px;
@@ -67,4 +67,41 @@
     align-items: center;
     justify-content: center;
     font-weight: 600;
+}
+
+
+@media (max-width: 750px) {
+    .main {
+        display: block;
+    }
+    .firstContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .active {
+        background-color: #fff;
+        color: #221F1F;
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        text-decoration-color: #000;
+    }
+    .firstContainerText {
+        text-align: center;
+    }
+    .secondContainer {
+        margin: 0;
+        background-color: #fff;
+        gap: 30px;
+    }
+    .image {
+        width: 400px;
+        height: 400px;
+    }
+    .soldText {
+        top: -13px;
+        right: -10px;
+    }
 }
