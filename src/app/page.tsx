@@ -13,6 +13,9 @@ export default function Home() {
 
   useEffect(() => {
     if (opt === 0) setData(artWorks)
+    if (opt === 1) setData(artWorks.filter(d => d.category === 'Abstract'))
+    if (opt === 2) setData(artWorks.filter(d => d.category === 'Landscape'))
+    if (opt === 3) setData(artWorks.filter(d => d.category === 'Portrait'))
   }, [opt])
 
   return (
@@ -68,6 +71,9 @@ export default function Home() {
                   height={200}
                   className={styles.image}
                 />
+                {
+                  item?.state === 'Sold' && <p className={styles.soldText}>Vendido</p>
+                }
               </div>
             ))
           }

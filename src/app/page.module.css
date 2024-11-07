@@ -29,23 +29,42 @@
 
 .secondContainer {
     margin: 0 60px;
-    padding: 0px 60px;
+    padding: 0px 30px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 27rem), 1fr));
-    grid-gap: 15px;
+    grid-gap: 40px;
     padding-top: 5px;
     padding-bottom: 15px;
     background-color: #fafafa;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .imageContainer {
     display: flex;
     justify-content: center;
-    padding-top: 40px;
+    align-items: center;
+    position: relative;
 }
 
 .image {
     width: 350px;
     height: 350px;
+}
+
+.soldText {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    color: #fff;
+    background-color: #6445FF;
+    width: 100px;
+    height: 30px;
+    z-index: 99;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
 }
