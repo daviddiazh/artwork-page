@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface ArtWork {
     _id?: string;
     name: string;
@@ -8,6 +10,6 @@ export interface ArtWork {
     sizeY: string;
     price: string;
     description: string;
-    image: string;
+    image: string | StaticImageData;
     state: string;
 }
