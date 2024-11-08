@@ -99,10 +99,10 @@ export default function Detail() {
                             spaceBetween: 20,
                         },
                     }}
-                    navigation={{
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    }}
+                    // navigation={{
+                    //     nextEl: '.swiper-button-next',
+                    //     prevEl: '.swiper-button-prev',
+                    // }}
                 >
                     {artWorks?.map(item => (
                         <SwiperSlide key={item?._id + item?.name}>
