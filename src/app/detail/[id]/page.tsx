@@ -56,11 +56,11 @@ export default function Detail() {
                             {artWork?.description}
                         </p>
                     </div>
-                    <div>
+                    <div style={{ width: '100%' }}>
                         {
                             artWork?.state !== 'Sold' && (
                                 <>
-                                    <p className={styles.text}>Precio</p>
+                                    <p className={styles.text} style={{padding: 0}}>Precio</p>
                                     <p className={styles.price}>{artWork?.price} Pesos</p>
                                     <button className={styles.btn}>PEDIR POR WHATSAPP</button>
                                 </>
@@ -123,8 +123,8 @@ export default function Detail() {
                             </Link>
                         </SwiperSlide>
                     ))}
-                    {/* <div className="swiper-button-prev" />
-                    <div className="swiper-button-next" /> */}
+                    {/* <div className="swiper-button-prev" /> */}
+                    {/* <div className="swiper-button-next" /> */}
                 </Swiper>
             </div>
         </div>
