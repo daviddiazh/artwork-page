@@ -1,15 +1,21 @@
 'use client'
 
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './styles.module.css'
 import Image from 'next/image'
 import darkMenu from '../../../../assets/dark-menu.svg'
 import lightMenu from '../../../../assets/light-menu.svg'
+import { usePathname } from 'next/navigation'
 
 export const MobileHeader = () => {
 
   const [ open, setOpen ] = useState(false);
+  const pathname = usePathname()
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   return (
     <div>

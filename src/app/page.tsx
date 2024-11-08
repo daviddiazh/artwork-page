@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import { artWorks } from "@/mocks/artworks";
 import { ArtWork } from "./interfaces/artwork";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -63,7 +64,7 @@ export default function Home() {
         <div className={styles.secondContainer}>
           {
             data?.map((item) => (
-              <div key={item?._id} className={styles.imageContainer}>
+              <Link key={item?._id} className={styles.imageContainer} href={`/detail/${item?._id}`}>
                 <div className={styles.image}>
                   <Image
                     src={item?.image}
@@ -76,7 +77,7 @@ export default function Home() {
                     item?.state === 'Sold' && <p className={styles.soldText}>Vendido</p>
                   }
                 </div>
-              </div>
+              </Link>
             ))
           }
         </div>

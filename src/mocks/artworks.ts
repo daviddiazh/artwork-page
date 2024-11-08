@@ -12,7 +12,7 @@ export const artWorks = [
         techniques: "Oil on canvas",
         sizeX: "60",
         sizeY: "80",
-        price: "$500",
+        price: "$500.000",
         description: "A vibrant sunset scene capturing the serene hues of the evening sky.",
         image: img1,
         state: "Available"
@@ -25,7 +25,7 @@ export const artWorks = [
         techniques: "Acrylic",
         sizeX: "75",
         sizeY: "100",
-        price: "$750",
+        price: "$750.000",
         description: "An abstract representation of city life and the energy of urban landscapes.",
         image: img2,
         state: "Available"
@@ -38,7 +38,7 @@ export const artWorks = [
         techniques: "Watercolor",
         sizeX: "50",
         sizeY: "70",
-        price: "$400",
+        price: "$400.000",
         description: "A delicate portrayal of the ocean waves during a peaceful morning.",
         image: img3,
         state: "Sold"
@@ -51,7 +51,7 @@ export const artWorks = [
         techniques: "Mixed media",
         sizeX: "80",
         sizeY: "100",
-        price: "$650",
+        price: "$650.000",
         description: "A detailed work showcasing the deep greens and textures of a lush forest.",
         image: img4,
         state: "Available"
@@ -64,7 +64,7 @@ export const artWorks = [
         techniques: "Oil on canvas",
         sizeX: "90",
         sizeY: "120",
-        price: "$950",
+        price: "$950.000",
         description: "An expansive view of golden fields under a warm afternoon sun.",
         image: img1,
         state: "Reserved"
@@ -90,7 +90,7 @@ export const artWorks = [
         techniques: "Acrylic",
         sizeX: "60",
         sizeY: "80",
-        price: "$600",
+        price: "$600.000",
         description: "A night sky filled with stars and constellations, depicting the vastness of space.",
         image: img3,
         state: "Available"
