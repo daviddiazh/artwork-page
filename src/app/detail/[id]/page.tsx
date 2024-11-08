@@ -99,6 +99,7 @@ export default function Detail() {
                             spaceBetween: 20,
                         },
                     }}
+                    navigation
                     // navigation={{
                     //     nextEl: '.swiper-button-next',
                     //     prevEl: '.swiper-button-prev',
@@ -122,8 +123,8 @@ export default function Detail() {
                             </Link>
                         </SwiperSlide>
                     ))}
-                    <div className="swiper-button-prev" />
-                    <div className="swiper-button-next" />
+                    {/* <div className="swiper-button-prev" />
+                    <div className="swiper-button-next" /> */}
                 </Swiper>
             </div>
         </div>
