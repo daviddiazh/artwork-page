@@ -15,6 +15,7 @@ import { ArtWork } from "@/app/interfaces/artwork";
 import { artWorks } from "@/mocks/artworks";
 import styles from './styles.module.css'
 import '../../globals.css'
+import Link from "next/link";
 
 export default function Detail() {
     const params = useParams();
@@ -101,15 +102,21 @@ export default function Detail() {
                     }}
                 >
                     {artWorks?.map(item => (
-                        <SwiperSlide key={item?._id}>
-                            <Image
-                                src={item?.image}
-                                alt="Cuadro"
-                                className={styles.img}
-                                width={300}
-                                height={300}
-                                loading="lazy"
-                            />
+                        <SwiperSlide key={item?._id + item?.name}>
+                            <Link href={`/detail/${item?._id}`}>
+                                <Image
+                                    src={item?.image}
+                                    alt="Cuadro"
+                                    className={styles.img}
+                                    width={300}
+                                    height={300}
+                                    loading="lazy"
+                                />
+                                <div>
+                                    <p className={styles.playName}>{artWork?.name}</p>
+                                    <p>{artWork?.price} pesos</p>
+                                </div>
+                            </Link>
                         </SwiperSlide>
                     ))}
                 </Swiper>

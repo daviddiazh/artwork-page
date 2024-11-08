@@ -80,6 +80,24 @@
     border-bottom: 1px solid #e5e5e5;
 }
 
+.playName {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.playPrice {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 
 @media (max-width: 820px) {
     .page {
