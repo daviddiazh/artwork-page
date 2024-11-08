@@ -75,7 +75,6 @@ export default function Detail() {
             <div>
                 <Swiper
                     cssMode
-                    navigation
                     pagination
                     mousewheel
                     keyboard
@@ -100,6 +99,10 @@ export default function Detail() {
                             spaceBetween: 20,
                         },
                     }}
+                    navigation={{
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    }}
                 >
                     {artWorks?.map(item => (
                         <SwiperSlide key={item?._id + item?.name}>
@@ -119,6 +122,8 @@ export default function Detail() {
                             </Link>
                         </SwiperSlide>
                     ))}
+                    <div className="swiper-button-prev" />
+                    <div className="swiper-button-next" />
                 </Swiper>
             </div>
         </div>
