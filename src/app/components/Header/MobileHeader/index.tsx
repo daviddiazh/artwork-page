@@ -63,7 +63,7 @@ export const MobileHeader = () => {
                         <p className={styles.opt}>Biografía</p>
                     </Link>
                     <Link href='/contact' onClick={() => setOpen(false)}>
-                        <p className={styles.opt}>Contact</p>
+                        <p className={styles.opt}>Contacto</p>
                     </Link>
                 </div>
             )

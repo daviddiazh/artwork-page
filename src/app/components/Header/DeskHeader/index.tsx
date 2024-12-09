@@ -23,7 +23,7 @@ export const DeskHeader = () => {
                 <p>Biografía</p>
             </Link>
             <Link href='/contact' className={ pathname === '/contact' ? styles.active : '' }>
-                <p>Contact</p>
+                <p>Contacto</p>
             </Link>
         </div>
     </div>

@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "next": "15.0.2",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-toastify": "^10.0.6",
+    "sharp": "^0.33.5",
     "swiper": "^11.1.14"
   },
   "devDependencies": {
