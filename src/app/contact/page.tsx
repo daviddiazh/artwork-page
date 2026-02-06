@@ -68,9 +68,9 @@ export default function Contact () {
         </div>
 
         <div className={styles.contactInfo}>
-          <p className={styles.name}>Beatriz Apellido</p>
+          <p className={styles.name}>Beatriz Art</p>
           <p className={styles.location}>Envigado - Antioquia, Colombia</p>
-          <p className={styles.phone}>+57 301 2279255</p>
+          <p className={styles.phone}>+57 300 000 0000</p>
         </div>
       </div>
       <ToastContainer />

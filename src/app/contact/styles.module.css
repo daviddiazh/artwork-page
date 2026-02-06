@@ -5,8 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 .form {
@@ -28,6 +28,7 @@
     border-radius: 5px;
     font-size: 16px;
     width: 100%;
+    border: 1px solid #d7d7d7;
 }
 
 .input:focus {
@@ -37,7 +38,7 @@
 .button {
     background-color: #00c3ff;
     border: none;
-    padding: 10px 25px;
+    padding: 10px 35px;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -72,7 +73,7 @@
     }
     .form {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 30px;
     }
     .inputContainer {
         width: 100%;
@@ -85,6 +86,6 @@
     }
     .contactInfo {
         width: 100%;
-        margin-top: 90px;
+        margin-top: 70px;
     }
 }

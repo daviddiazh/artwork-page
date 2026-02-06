@@ -14,7 +14,7 @@ export default function About () {
         className={styles.image}
       />
       <div>
-        <p className={styles.name}>Beatriz Apellido</p>
+        <p className={styles.name}>Beatriz Art</p>
         <p className={styles.role}>Artista Colombiana</p>
         <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis blanditiis consectetur in voluptatem veritatis, illo ducimus numquam doloribus, corrupti vero quod eos. Fugiat amet, reprehenderit sequi maiores sed culpa recusandae.
         Dolores nobis consequatur, labore sed voluptatem, libero facere placeat deserunt at ipsa aliquid! Esse, distinctio. Hic fuga, saepe inventore exercitationem odit voluptatum minima. Debitis hic nemo animi asperiores quibusdam impedit?
